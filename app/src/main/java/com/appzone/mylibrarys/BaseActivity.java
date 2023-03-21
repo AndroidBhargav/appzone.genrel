@@ -19,7 +19,6 @@ import unified.vpn.sdk.Callback;
 import unified.vpn.sdk.ClientInfo;
 import unified.vpn.sdk.CompletableCallback;
 import unified.vpn.sdk.HydraTransportConfig;
-import unified.vpn.sdk.OpenVpnTransport;
 import unified.vpn.sdk.OpenVpnTransportConfig;
 import unified.vpn.sdk.SdkNotificationConfig;
 import unified.vpn.sdk.SessionConfig;
@@ -131,8 +130,8 @@ public class BaseActivity extends AppCompatActivity {
                     selectedCountry = Country;
                     ArrayList<String> arrayList = new ArrayList<>();
                     arrayList.add("hydra");
-                    arrayList.add(OpenVpnTransport.TRANSPORT_ID_TCP);
-                    arrayList.add(OpenVpnTransport.TRANSPORT_ID_UDP);
+                    arrayList.add("openvpn_tcp");
+                    arrayList.add("openvpn_udp");
                     LinkedList<String> linkedList = new LinkedList<String>();
                     linkedList.add("*facebook.com");
                     linkedList.add("*wtfismyip.com");
@@ -211,4 +210,6 @@ public class BaseActivity extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
     }
+
+
 }

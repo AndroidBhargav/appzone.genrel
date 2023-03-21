@@ -84,7 +84,7 @@ dependencies {
 
     implementation 'com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:4.2.0'
     implementation 'com.github.AnchorFreePartner.hydra-sdk-android:hydra:4.2.0'
-    implementation 'com.github.AnchorFreePartner.hydra-sdk-android:openvpn:4.1.0'
+    implementation 'com.github.AnchorFreePartner.hydra-sdk-android:openvpn:4.0.0'
 
     implementation 'com.facebook.infer.annotation:infer-annotation:0.18.0'
 }
